@@ -16,7 +16,3 @@ If you copy in a new file or change the path, update the flag in the pod yaml.
 make
 ```
 
-**To Deploy**
-
-You can use the example provisioner pod to deploy ```kubectl create -f examples/pod-provisioner.yaml```
-
