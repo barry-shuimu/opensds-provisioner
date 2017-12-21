@@ -1,0 +1,548 @@
+package: github.com/nbp/opensds-provisioner
+import:
+- package: cloud.google.com/go/compute/metadata
+- package: cloud.google.com/go/internal
+- package: github.com/Microsoft/go-winio
+- package: github.com/PuerkitoBio/purell
+- package: github.com/PuerkitoBio/urlesc
+- package: github.com/astaxie/beego
+  subpackages:
+  - httplib
+- package: github.com/aws/aws-sdk-go
+  subpackages:
+  - aws
+  - aws/awserr
+  - aws/awsutil
+  - aws/client
+  - aws/client/metadata
+  - aws/corehandlers
+  - aws/credentials
+  - aws/credentials/ec2rolecreds
+  - aws/credentials/endpointcreds
+  - aws/credentials/stscreds
+  - aws/defaults
+  - aws/ec2metadata
+  - aws/endpoints
+  - aws/request
+  - aws/session
+  - aws/signer/v4
+  - internal/shareddefaults
+  - private/protocol
+  - private/protocol/ec2query
+  - private/protocol/json/jsonutil
+  - private/protocol/jsonrpc
+  - private/protocol/query
+  - private/protocol/query/queryutil
+  - private/protocol/rest
+  - private/protocol/restjson
+  - private/protocol/xml/xmlutil
+  - service/ecr
+  - service/sts
+- package: github.com/beorn7/perks
+  subpackages:
+  - quantile
+- package: github.com/davecgh/go-spew
+  subpackages:
+  - spew
+- package: github.com/dgrijalva/jwt-go
+- package: github.com/docker/distribution
+  subpackages:
+  - context
+  - digestset
+  - reference
+- package: github.com/docker/docker
+  subpackages:
+  - api/types
+  - api/types/blkiodev
+  - api/types/container
+  - api/types/filters
+  - api/types/mount
+  - api/types/network
+  - api/types/registry
+  - api/types/strslice
+  - api/types/swarm
+  - api/types/versions
+- package: github.com/docker/go-connections
+  subpackages:
+  - nat
+- package: github.com/docker/go-units
+- package: github.com/docker/spdystream
+  subpackages:
+  - spdy
+- package: github.com/emicklei/go-restful
+  subpackages:
+  - log
+- package: github.com/emicklei/go-restful-swagger12
+- package: github.com/fsnotify/fsnotify
+- package: github.com/ghodss/yaml
+- package: github.com/go-ini/ini
+- package: github.com/go-openapi/jsonpointer
+- package: github.com/go-openapi/jsonreference
+- package: github.com/go-openapi/spec
+- package: github.com/go-openapi/swag
+- package: github.com/gogo/protobuf
+  subpackages:
+  - proto
+  - sortkeys
+- package: github.com/golang/glog
+- package: github.com/golang/groupcache
+  subpackages:
+  - consistenthash
+  - groupcachepb
+  - lru
+  - singleflight
+- package: github.com/golang/protobuf
+  subpackages:
+  - proto
+  - ptypes
+  - ptypes/any
+  - ptypes/duration
+  - ptypes/timestamp
+- package: github.com/google/btree
+- package: github.com/google/gofuzz
+- package: github.com/googleapis/gnostic
+  subpackages:
+  - OpenAPIv2
+  - OpenAPIv3
+  - compiler
+  - extensions
+  - jsonwriter
+  - plugins
+- package: github.com/gophercloud/gophercloud
+  subpackages:
+  - openstack/common/extensions
+  - openstack/compute/v2/flavors
+  - openstack/compute/v2/images
+  - openstack/identity/v2/tenants
+  - openstack/identity/v2/tokens
+  - openstack/identity/v3/tokens
+  - openstack/networking/v2/extensions/lbaas_v2/listeners
+  - openstack/networking/v2/extensions/lbaas_v2/monitors
+  - openstack/networking/v2/extensions/lbaas_v2/pools
+  - openstack/networking/v2/extensions/security/rules
+  - openstack/utils
+  - pagination
+- package: github.com/gorilla/mux
+- package: github.com/gregjones/httpcache
+  subpackages:
+  - diskcache
+- package: github.com/hashicorp/golang-lru
+  subpackages:
+  - simplelru
+- package: github.com/hashicorp/hcl
+  subpackages:
+  - hcl/ast
+  - hcl/parser
+  - hcl/scanner
+  - hcl/strconv
+  - hcl/token
+  - json/parser
+  - json/scanner
+  - json/token
+- package: github.com/heketi/heketi
+  subpackages:
+  - apps
+  - apps/glusterfs
+  - middleware
+  - pkg/glusterfs/api
+  - pkg/utils
+- package: github.com/howeyc/gopass
+- package: github.com/imdario/mergo
+- package: github.com/inconshreveable/mousetrap
+- package: github.com/jmespath/go-jmespath
+- package: github.com/json-iterator/go
+- package: github.com/juju/ratelimit
+- package: github.com/kr/fs
+- package: github.com/kubernetes-incubator/external-storage
+  subpackages:
+  - lib/allocator
+  - lib/controller
+  - lib/leaderelection
+  - lib/leaderelection/resourcelock
+- package: github.com/lpabon/godbc
+- package: github.com/magiconair/properties
+- package: github.com/mailru/easyjson
+  subpackages:
+  - buffer
+  - jlexer
+  - jwriter
+- package: github.com/matttproud/golang_protobuf_extensions
+  subpackages:
+  - pbutil
+- package: github.com/mitchellh/mapstructure
+- package: github.com/onsi/ginkgo
+  subpackages:
+  - config
+  - internal/codelocation
+  - internal/containernode
+  - internal/failer
+  - internal/leafnodes
+  - internal/remote
+  - internal/spec
+  - internal/spec_iterator
+  - internal/specrunner
+  - internal/suite
+  - internal/testingtproxy
+  - internal/writer
+  - reporters
+  - reporters/stenographer
+  - reporters/stenographer/support/go-colorable
+  - reporters/stenographer/support/go-isatty
+  - types
+- package: github.com/onsi/gomega
+  subpackages:
+  - format
+  - internal/assertion
+  - internal/asyncassertion
+  - internal/oraclematcher
+  - internal/testingtsupport
+  - matchers
+  - matchers/support/goraph/bipartitegraph
+  - matchers/support/goraph/edge
+  - matchers/support/goraph/node
+  - matchers/support/goraph/util
+  - types
+- package: github.com/opencontainers/go-digest
+- package: github.com/opensds/opensds
+  subpackages:
+  - client
+  - pkg/model
+  - pkg/utils
+  - pkg/utils/config
+  - pkg/utils/constants
+  - pkg/utils/urls
+- package: github.com/pborman/uuid
+- package: github.com/pelletier/go-buffruneio
+- package: github.com/pelletier/go-toml
+- package: github.com/peterbourgon/diskv
+- package: github.com/pkg/errors
+- package: github.com/pkg/sftp
+- package: github.com/pmezard/go-difflib
+  subpackages:
+  - difflib
+- package: github.com/prometheus/client_golang
+  subpackages:
+  - prometheus
+- package: github.com/prometheus/client_model
+  subpackages:
+  - go
+- package: github.com/prometheus/common
+  subpackages:
+  - expfmt
+  - internal/bitbucket.org/ww/goautoneg
+  - model
+- package: github.com/prometheus/procfs
+  subpackages:
+  - xfs
+- package: github.com/spf13/afero
+  subpackages:
+  - mem
+  - sftp
+- package: github.com/spf13/cast
+- package: github.com/spf13/cobra
+- package: github.com/spf13/jwalterweatherman
+- package: github.com/spf13/pflag
+- package: github.com/stretchr/objx
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
+  - http
+  - mock
+- package: github.com/urfave/negroni
+- package: golang.org/x/crypto
+  subpackages:
+  - curve25519
+  - ed25519
+  - ed25519/internal/edwards25519
+  - ssh
+  - ssh/terminal
+- package: golang.org/x/net
+  subpackages:
+  - context
+  - context/ctxhttp
+  - http2
+  - http2/hpack
+  - idna
+  - lex/httplex
+  - proxy
+- package: golang.org/x/oauth2
+  subpackages:
+  - google
+  - internal
+  - jws
+  - jwt
+- package: golang.org/x/sys
+  subpackages:
+  - unix
+  - windows
+- package: golang.org/x/text
+  subpackages:
+  - cases
+  - internal
+  - internal/tag
+  - language
+  - runes
+  - secure/bidirule
+  - secure/precis
+  - transform
+  - unicode/bidi
+  - unicode/norm
+  - width
+- package: google.golang.org/api
+  subpackages:
+  - gensupport
+  - googleapi
+  - googleapi/internal/uritemplates
+- package: google.golang.org/appengine
+  subpackages:
+  - internal
+  - internal/app_identity
+  - internal/base
+  - internal/datastore
+  - internal/log
+  - internal/modules
+  - internal/remote_api
+  - internal/urlfetch
+  - urlfetch
+- package: gopkg.in/gcfg.v1/scanner
+- package: gopkg.in/gcfg.v1/token
+- package: gopkg.in/gcfg.v1/types
+- package: gopkg.in/inf.v0
+- package: gopkg.in/warnings.v0
+- package: gopkg.in/yaml.v2
+- package: k8s.io/api/admissionregistration/v1alpha1
+- package: k8s.io/api/apps/v1beta1
+- package: k8s.io/api/apps/v1beta2
+- package: k8s.io/api/authentication/v1
+- package: k8s.io/api/authentication/v1beta1
+- package: k8s.io/api/authorization/v1
+- package: k8s.io/api/authorization/v1beta1
+- package: k8s.io/api/autoscaling/v1
+- package: k8s.io/api/autoscaling/v2beta1
+- package: k8s.io/api/batch/v1
+- package: k8s.io/api/batch/v1beta1
+- package: k8s.io/api/batch/v2alpha1
+- package: k8s.io/api/certificates/v1beta1
+- package: k8s.io/api/core/v1
+- package: k8s.io/api/extensions/v1beta1
+- package: k8s.io/api/networking/v1
+- package: k8s.io/api/policy/v1beta1
+- package: k8s.io/api/rbac/v1
+- package: k8s.io/api/rbac/v1alpha1
+- package: k8s.io/api/rbac/v1beta1
+- package: k8s.io/api/scheduling/v1alpha1
+- package: k8s.io/api/settings/v1alpha1
+- package: k8s.io/api/storage/v1
+- package: k8s.io/api/storage/v1beta1
+- package: k8s.io/apiextensions-apiserver/pkg/apis/apiextensions
+  subpackages:
+  - v1beta1
+- package: k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/scheme
+- package: k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/typed/apiextensions/v1beta1
+- package: k8s.io/apiextensions-apiserver/pkg/cmd/server
+- package: k8s.io/apiextensions-apiserver/pkg/features
+- package: k8s.io/apimachinery/pkg/api/equality
+- package: k8s.io/apimachinery/pkg/api/errors
+- package: k8s.io/apimachinery/pkg/api/meta
+- package: k8s.io/apimachinery/pkg/api/resource
+- package: k8s.io/apimachinery/pkg/api/validation
+- package: k8s.io/apimachinery/pkg/apimachinery
+  subpackages:
+  - announced
+  - registered
+- package: k8s.io/apimachinery/pkg/apis/meta/internalversion
+- package: k8s.io/apimachinery/pkg/apis/meta/v1
+  subpackages:
+  - unstructured
+  - validation
+- package: k8s.io/apimachinery/pkg/apis/meta/v1alpha1
+- package: k8s.io/apimachinery/pkg/conversion
+  subpackages:
+  - queryparams
+  - unstructured
+- package: k8s.io/apimachinery/pkg/fields
+- package: k8s.io/apimachinery/pkg/labels
+- package: k8s.io/apimachinery/pkg/runtime
+  subpackages:
+  - schema
+  - serializer
+  - serializer/json
+  - serializer/protobuf
+  - serializer/recognizer
+  - serializer/streaming
+  - serializer/versioning
+- package: k8s.io/apimachinery/pkg/selection
+- package: k8s.io/apimachinery/pkg/types
+- package: k8s.io/apimachinery/pkg/util/cache
+- package: k8s.io/apimachinery/pkg/util/clock
+- package: k8s.io/apimachinery/pkg/util/diff
+- package: k8s.io/apimachinery/pkg/util/errors
+- package: k8s.io/apimachinery/pkg/util/framer
+- package: k8s.io/apimachinery/pkg/util/httpstream
+  subpackages:
+  - spdy
+- package: k8s.io/apimachinery/pkg/util/intstr
+- package: k8s.io/apimachinery/pkg/util/json
+- package: k8s.io/apimachinery/pkg/util/mergepatch
+- package: k8s.io/apimachinery/pkg/util/net
+- package: k8s.io/apimachinery/pkg/util/rand
+- package: k8s.io/apimachinery/pkg/util/remotecommand
+- package: k8s.io/apimachinery/pkg/util/runtime
+- package: k8s.io/apimachinery/pkg/util/sets
+- package: k8s.io/apimachinery/pkg/util/strategicpatch
+- package: k8s.io/apimachinery/pkg/util/uuid
+- package: k8s.io/apimachinery/pkg/util/validation
+  subpackages:
+  - field
+- package: k8s.io/apimachinery/pkg/util/wait
+- package: k8s.io/apimachinery/pkg/util/yaml
+- package: k8s.io/apimachinery/pkg/version
+- package: k8s.io/apimachinery/pkg/watch
+- package: k8s.io/apimachinery/third_party/forked/golang/json
+- package: k8s.io/apimachinery/third_party/forked/golang/netutil
+- package: k8s.io/apimachinery/third_party/forked/golang/reflect
+- package: k8s.io/apiserver/pkg/authentication/authenticator
+- package: k8s.io/apiserver/pkg/authentication/serviceaccount
+- package: k8s.io/apiserver/pkg/authentication/user
+- package: k8s.io/apiserver/pkg/features
+- package: k8s.io/apiserver/pkg/server
+- package: k8s.io/apiserver/pkg/util/feature
+- package: k8s.io/apiserver/pkg/util/logs
+- package: k8s.io/client-go/discovery
+  subpackages:
+  - fake
+- package: k8s.io/client-go/kubernetes
+  subpackages:
+  - scheme
+  - typed/admissionregistration/v1alpha1
+  - typed/admissionregistration/v1alpha1/fake
+  - typed/apps/v1beta1
+  - typed/apps/v1beta1/fake
+  - typed/apps/v1beta2
+  - typed/apps/v1beta2/fake
+  - typed/authentication/v1
+  - typed/authentication/v1/fake
+  - typed/authentication/v1beta1
+  - typed/authentication/v1beta1/fake
+  - typed/authorization/v1
+  - typed/authorization/v1/fake
+  - typed/authorization/v1beta1
+  - typed/authorization/v1beta1/fake
+  - typed/autoscaling/v1
+  - typed/autoscaling/v1/fake
+  - typed/autoscaling/v2beta1
+  - typed/autoscaling/v2beta1/fake
+  - typed/batch/v1
+  - typed/batch/v1/fake
+  - typed/batch/v1beta1
+  - typed/batch/v1beta1/fake
+  - typed/batch/v2alpha1
+  - typed/batch/v2alpha1/fake
+  - typed/certificates/v1beta1
+  - typed/certificates/v1beta1/fake
+  - typed/core/v1
+  - typed/core/v1/fake
+  - typed/extensions/v1beta1
+  - typed/extensions/v1beta1/fake
+  - typed/networking/v1
+  - typed/networking/v1/fake
+  - typed/policy/v1beta1
+  - typed/policy/v1beta1/fake
+  - typed/rbac/v1
+  - typed/rbac/v1/fake
+  - typed/rbac/v1alpha1
+  - typed/rbac/v1alpha1/fake
+  - typed/rbac/v1beta1
+  - typed/rbac/v1beta1/fake
+  - typed/scheduling/v1alpha1
+  - typed/scheduling/v1alpha1/fake
+  - typed/settings/v1alpha1
+  - typed/settings/v1alpha1/fake
+  - typed/storage/v1
+  - typed/storage/v1/fake
+  - typed/storage/v1beta1
+  - typed/storage/v1beta1/fake
+- package: k8s.io/client-go/pkg/version
+- package: k8s.io/client-go/rest
+  subpackages:
+  - watch
+- package: k8s.io/client-go/testing
+- package: k8s.io/client-go/third_party/forked/golang/template
+- package: k8s.io/client-go/tools/auth
+- package: k8s.io/client-go/tools/cache
+- package: k8s.io/client-go/tools/clientcmd
+  subpackages:
+  - api
+  - api/latest
+  - api/v1
+- package: k8s.io/client-go/tools/metrics
+- package: k8s.io/client-go/tools/pager
+- package: k8s.io/client-go/tools/record
+- package: k8s.io/client-go/tools/reference
+- package: k8s.io/client-go/transport
+  subpackages:
+  - spdy
+- package: k8s.io/client-go/util/cert
+- package: k8s.io/client-go/util/exec
+- package: k8s.io/client-go/util/flowcontrol
+- package: k8s.io/client-go/util/homedir
+- package: k8s.io/client-go/util/integer
+- package: k8s.io/client-go/util/jsonpath
+- package: k8s.io/client-go/util/retry
+- package: k8s.io/kube-openapi/pkg/common
+- package: k8s.io/kubernetes/pkg/api
+  subpackages:
+  - helper
+  - install
+  - service
+  - util
+  - v1
+  - v1/helper
+  - v1/pod
+  - validation
+- package: k8s.io/kubernetes/pkg/apis/extensions
+- package: k8s.io/kubernetes/pkg/apis/networking
+- package: k8s.io/kubernetes/pkg/capabilities
+- package: k8s.io/kubernetes/pkg/cloudprovider
+- package: k8s.io/kubernetes/pkg/controller
+- package: k8s.io/kubernetes/pkg/credentialprovider
+- package: k8s.io/kubernetes/pkg/features
+- package: k8s.io/kubernetes/pkg/kubelet/apis
+- package: k8s.io/kubernetes/pkg/kubelet/types
+- package: k8s.io/kubernetes/pkg/security/apparmor
+- package: k8s.io/kubernetes/pkg/serviceaccount
+- package: k8s.io/kubernetes/pkg/util/file
+- package: k8s.io/kubernetes/pkg/util/goroutinemap
+  subpackages:
+  - exponentialbackoff
+- package: k8s.io/kubernetes/pkg/util/hash
+- package: k8s.io/kubernetes/pkg/util/io
+- package: k8s.io/kubernetes/pkg/util/mount
+- package: k8s.io/kubernetes/pkg/util/net/sets
+- package: k8s.io/kubernetes/pkg/util/parsers
+- package: k8s.io/kubernetes/pkg/util/pointer
+- package: k8s.io/kubernetes/pkg/util/taints
+- package: k8s.io/kubernetes/pkg/util/version
+- package: k8s.io/kubernetes/pkg/volume
+  subpackages:
+  - util
+- package: k8s.io/utils/exec
+testImport:
+- package: cloud.google.com/go/datastore
+- package: github.com/elazarl/goproxy
+- package: github.com/heketi/tests
+- package: github.com/powerman/rpc-codec
+  subpackages:
+  - jsonrpc2
+- package: github.com/smartystreets/goconvey
+  subpackages:
+  - convey
+- package: gopkg.in/check.v1
+- package: gopkg.in/gcfg.v1
+- package: gopkg.in/yaml.v1
+- package: k8s.io/apimachinery/pkg/api/testing/fuzzer
+- package: k8s.io/apimachinery/pkg/api/testing/roundtrip
+- package: k8s.io/apimachinery/pkg/apis/meta/fuzzer
+- package: k8s.io/client-go/util/testing
+- package: k8s.io/kubernetes/pkg/securitycontext
+- package: k8s.io/kubernetes/pkg/util/slice
